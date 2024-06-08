@@ -1,9 +1,18 @@
 {
-    "nome": "Maria Souza",
-    "telefone": "1-555-736-8031",
-    "email": "maria@souza.com",
-    "cidade": "Rio de Janeiro",
-    "categoria": "familia",
-    "website": "mariasouza.com"
-  }
-  
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Maria Joaquina",
+      "telefone": "3199999999",
+      "email": "mariajoaquina@gmail.com",
+      "cidade": "Rio de Janeiro"
+    },
+    {
+      "id": 2,
+      "nome": "Bernardo Pace",
+      "telefone": "3199999999",
+      "email": "bernardo@gmail.com",
+      "cidade": "Belo Horizonte"
+    }
+  ]
+}
