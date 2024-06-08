@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Serve arquivos estáticos da pasta "assets"
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Define uma rota para a página inicial
 app.get('/', (req, res) => {

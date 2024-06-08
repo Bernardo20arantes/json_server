@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded and parsed');
   fetch('/data')
-    .then(response => response.json())
+    .then(response => {
+      console.log('Response received:', response);
+      return response.json();
+    })
     .then(data => {
-      console.log(data); // Verifique se os dados estão sendo retornados corretamente
+      console.log('Data parsed:', data);
       const container = document.getElementById('data-container');
       let userHTML = '';
       data.usuarios.forEach(usuario => {
